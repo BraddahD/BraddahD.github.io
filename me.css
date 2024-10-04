@@ -1,0 +1,152 @@
+body {
+  background-color: black;
+}
+h1 {
+  color: beige;
+}
+p {
+  font-family: "Rubik Bubbles";
+  font-size: large;
+  color: antiquewhite;
+}
+.header {
+  font-family: "Monsieur La Doulaise";
+}
+#topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 99vw;
+}
+#leftcornerspace {
+  width: 5vw;
+}
+#title {
+  height: 9vh;
+  border: 5px;
+  border-color: black;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+#hub {
+  background-color: orange;
+  border-radius: 10px;
+  height: 5vh;
+  display: flex;
+  align-self: center;
+}
+
+#hub h1 {
+  color: black;
+}
+
+.navbar {
+  color: white;
+}
+
+.dropdown-item {
+  height: 0;
+}
+
+.menu-item {
+  display: none;
+  padding-right: 1vw;
+}
+.menu-item:hover {
+  background-color: orange;
+}
+
+.menu-item:first-of-type {
+  display: block;
+}
+
+.dropdown-item:has(.menu-item:hover) .menu-item {
+  display: block;
+}
+
+.menu-item a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+#centertext {
+  display: flex;
+  justify-content: center;
+}
+#sitback {
+  display: flex;
+  justify-content: center;
+}
+.gif {
+  padding-left: 25vw;
+  width: 50vw;
+}
+#header {
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+}
+#guitars {
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+}
+.guitarpic {
+  width: 75vw;
+  display: flex;
+  align-self: center;
+  padding-bottom: 1vh;
+}
+.dylanheader {
+  display: flex;
+  flex-direction: column;
+  color: beige;
+  align-items: center;
+}
+#smallp {
+  font-size: x-small;
+}
+.dilpic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dilpic img {
+  width: 50vw;
+}
+#H {
+  display: none;
+}
+#D {
+  display: none;
+}
+#disapearhub {
+  align-self: center;
+}
+
+@media all and (max-width: 500px) {
+  .guitarpic {
+    width: 95vw;
+  }
+  #disapearhub {
+    display: none;
+  }
+  #disapeardylan {
+    display: none;
+  }
+  #D {
+    display: unset;
+  }
+  #H {
+    display: unset;
+    align-self: center;
+  }
+  .dilpic img {
+    width: 95vw;
+  }
+  .gif {
+    width: 95vw;
+    padding-left: 0;
+  }
+}
